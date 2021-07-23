@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda-E-Store</title>
+    <!-- Font Awesome Integration -->
+    <script
+      src="https://kit.fontawesome.com/0a353b7928.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Integration -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Intigration -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/logo.png"
+              alt="logo"
+              class="d-inline-block align-text-top img-fluid"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="m-auto w-50 search-form">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control rounded-pill border-0"
+                  placeholder="Search"
+                  aria-label="search"
+                  aria-describedby="button-addon2"
+                />
+                <span class="search-icon">
+                  <a class="btn" type="button" id="button-addon2">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </span>
+              </div>
+            </form>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Watches</a></li>
+                  <li><a class="dropdown-item" href="#">Bags</a></li>
+                  <li><a class="dropdown-item" href="#">Shoes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="hero-area">
+        <div class="container">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner bg-color">
+              <div class="carousel-item active">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-md-7">
+                    <h1>Cool Dude Headphone</h1>
+                    <p>
+                      This is the best headphone in the world for people who
+                      just want to waste time in front of funky world.
+                    </p>
+                    <h3>$420</h3>
+                    <a href="#" class="btn btn-buy"
+                      >Buy Now
+                      <span class="ms-2"
+                        ><i class="fas fa-arrow-right"></i></span
+                    ></a>
+                  </div>
+                  <div class="col-md-5">
+                    <img
+                      src="images/banner-images/headphone.png"
+                      class="d-block w-100"
+                      alt="slider-img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-md-7">
+                    <h1>Mega LCD TV For Sports</h1>
+                    <p>
+                      This is the best tv in the world for people who just want
+                      to waste time in front of tv.
+                    </p>
+                    <h3>$1200</h3>
+                    <a href="#" class="btn btn-buy"
+                      >Buy Now
+                      <span class="ms-2"
+                        ><i class="fas fa-arrow-right"></i></span
+                    ></a>
+                  </div>
+                  <div class="col-md-5">
+                    <img
+                      src="images/banner-images/tv.png"
+                      class="d-block w-100"
+                      alt="slider-img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-md-7">
+                    <h1>X-Box for your living room</h1>
+                    <p>
+                      This is the best x-box in the world for people who just
+                      want to waste time in front of fake sports.
+                    </p>
+                    <h3>$600</h3>
+                    <a href="#" class="btn btn-buy"
+                      >Buy Now
+                      <span class="ms-2"
+                        ><i class="fas fa-arrow-right"></i></span
+                    ></a>
+                  </div>
+                  <div class="col-md-5">
+                    <img
+                      src="images/banner-images/xbox.png"
+                      class="d-block w-100"
+                      alt="slider-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Header End -->
+
+    <!-- Category Section Started -->
+    <section class="category pb-5">
+      <div class="container">
+        <div class="row g-4 m-auto justify-content-center">
+          <h3 class="mb-3">Categories</h3>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="
+                row
+                justify-content-center
+                align-items-center
+                category-card
+                watch-bg
+                m-auto
+              "
+            >
+              <div class="col-8">
+                <h4 class="text-white">Watch</h4>
+              </div>
+              <div class="col-4 text-center">
+                <img
+                  src="images/categories/watch.png"
+                  alt="cat-img"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="
+                row
+                justify-content-center
+                align-items-center
+                category-card
+                bag-bg
+                m-auto
+              "
+            >
+              <div class="col-8">
+                <h4 class="text-white">Bags</h4>
+              </div>
+              <div class="col-4 text-center">
+                <img
+                  src="images/categories/bag.png"
+                  alt="cat-img"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="
+                row
+                justify-content-center
+                align-items-center
+                category-card
+                shoes-bg
+                m-auto
+              "
+            >
+              <div class="col-8">
+                <h4 class="text-white">Shoes</h4>
+              </div>
+              <div class="col-4 text-center">
+                <img
+                  src="images/categories/shoes.png"
+                  alt="cat-img"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Category Section End -->
+
+    <!-- Product Page Started -->
+    <section class="products">
+      <div class="container">
+        <div class="row justify-content-center g-4 mb-5">
+          <h3 class="">shoes</h3>
+          <div class="col-md-6 col-lg-4 col-12">
+            <div class="card border-0 rounded-3">
+              <img
+                src="images/shoes/shoe-1.png"
+                class="card-img-top"
+                alt="products-img"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Reebok Dart Men’s Shoes</h5>
+                <p class="card-text text-center mb-3">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+                <h5 class="card-title mb-3">$1289</h5>
+                <a href="#" class="btn btn-buy"
+                  >Buy Now<span class="ms-2"
+                    ><i class="fas fa-arrow-right"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-12">
+            <div class="card border-0 rounded-3">
+              <img
+                src="images/shoes/shoe-2.png"
+                class="card-img-top"
+                alt="products-img"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Reebok Pump</h5>
+                <p class="card-text text-center mb-3">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+                <h5 class="card-title mb-3">$799</h5>
+                <a href="#" class="btn btn-buy"
+                  >Buy Now<span class="ms-2"
+                    ><i class="fas fa-arrow-right"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-12">
+            <div class="card border-0 rounded-3">
+              <img
+                src="images/shoes/shoe-3.png"
+                class="card-img-top"
+                alt="products-img"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Reebok All Terrain</h5>
+                <p class="card-text text-center mb-3">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+                <h5 class="card-title mb-3">$699</h5>
+                <a href="#" class="btn btn-buy"
+                  >Buy Now<span class="ms-2"
+                    ><i class="fas fa-arrow-right"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center g-4">
+          <h3 class="mt-5">Backpack</h3>
+          <div class="col-md-6 col-lg-4 col-12">
+            <div
+              class="
+                card
+                border-0
+                rounded-3
+                justify-content-centerc
+                align-items-center
+              "
+            >
+              <img
+                src="images/bags/bag-1.png"
+                class="card-img-top w-75"
+                alt="products-img"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Ison Backpack</h5>
+                <p class="card-text text-center mb-3">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+                <h5 class="card-title mb-3">$1289</h5>
+                <a href="#" class="btn btn-buy"
+                  >Buy Now<span class="ms-2"
+                    ><i class="fas fa-arrow-right"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-12">
+            <div
+              class="
+                card
+                border-0
+                rounded-3
+                justify-content-centerc
+                align-items-center
+              "
+            >
+              <img
+                src="images/bags/bag-2.png"
+                class="card-img-top w-75"
+                alt="products-img"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Biaowang Backpack</h5>
+                <p class="card-text text-center mb-3">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+                <h5 class="card-title mb-3">$799</h5>
+                <a href="#" class="btn btn-buy"
+                  >Buy Now<span class="ms-2"
+                    ><i class="fas fa-arrow-right"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-12">
+            <div
+              class="
+                card
+                border-0
+                rounded-3
+                justify-content-centerc
+                align-items-center
+              "
+            >
+              <img
+                src="images/bags/bag-3.png"
+                class="card-img-top w-75"
+                alt="products-img"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">Dxyizu WS54 Smart</h5>
+                <p class="card-text text-center mb-3">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+                <h5 class="card-title mb-3">$699</h5>
+                <a href="#" class="btn btn-buy"
+                  >Buy Now<span class="ms-2"
+                    ><i class="fas fa-arrow-right"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Page End -->
+
+    <section class="subscriber text-center">
+      <div class="container">
+        <div class="row subscriber-box">
+          <div class="col-12">
+            <h3>LET'S STAY IN TOUCH</h3>
+            <p>Get updates on sales specials and more</p>
+            <div class="input-group input-group-lg mb-3 m-auto input-email">
+              <input
+                type="text"
+                class="form-control border-0"
+                placeholder="Enter Your Email"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-send"
+                type="button"
+                id="button-addon2"
+              >
+                SEND
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap Bundle Js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
